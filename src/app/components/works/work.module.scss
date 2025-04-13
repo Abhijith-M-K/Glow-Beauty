@@ -1,0 +1,43 @@
+.worksSection {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 4rem 2rem;
+  
+    @media (max-width: 768px) {
+      padding: 3rem 1rem;
+    }
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #e91e63;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .imageCard {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+  
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+  
